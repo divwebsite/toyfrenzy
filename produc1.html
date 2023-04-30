@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSS Sales</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+  <video autoplay loop muted>
+    <source src="images/Movie002.mp4" type="video/mp4">
+  </video>
+
+
+
+  <header class='main-header'>
+    <div class="menu-wrap">
+        <!-- Logo container -->
+        <a href='index.html' target='_blank' class="logo-wrap">
+            <img class="logo" src="images/logo.png" alt="Logo" >
+        </a>
+        <p>JSS Sales</p>
+        
+        <!-- When this is checked, nav menu is dropped -->
+        <input type='checkbox' id='nav-tog'>
+
+        <!-- Hamburger btn -->
+        <label for='nav-tog'  class="drop-trigger">
+            <!-- Hamburg bars -->
+            <span class="btn-bar top"></span>
+            <span class='btn-bar middle'></span>
+            <span class='btn-bar bottom'></span>
+        </label>
+        <!-- Menu -->
+        <nav class="main-nav">
+            <!-- This covers the whole background of the dropped menu -->
+            <label for='nav-tog' class='nav-revert'></label>
+            <!-- Menu items -->
+            <a href='index.html' class="nav-item"><span>Home</span></a><br>
+            <a href='aboutus.html' class="nav-item"><span>About Us</span></a><br>
+            <a href='aboutus.html' class="nav-item"><span>All Products</span></a><br>
+            <a href='cataloguedownload.html' class="nav-item"><span>Catalogue</span></a><br>
+            <a href='contact.html' class="nav-item"><span>Contact Us</span></a><br>
+        </nav>
+    </div>
+</header>
+<br><br><br><br><br><br><br><br>
+
+<center>
+    <img src="images/lilicpurple.file" alt="Nature" class="responsive">
+</center>
+
+
+
+
+
+
+<p class="producttext">Need a reminder to help you boost your daily water intake? The motivational quotes with times are perfect for on-the-go hydration and boosting fitness goals.</p><br>
+
+<p class="producttext">Material: 100% BPA Free & Toxin Free also leak proof & odour free and made of premium food grade plastic. Light weight and portable. Flip Top Lid: The lid and the cup are connected to prevent the lid from falling during exercise or walking. Wide-mouth design is easy to clean and fill with ice cubes or to infuse with fruits to make your life healthier. With Straw: This design is conducive to sports such as cycling or trail running. Silicone materials made durable, soft and safe for humans. Time Marker: Always too busy and forget to rehydrate the body in time? Our water bottle has a design that reminds you to drink water. Put it on your table and you will never forget to drink water. Gradient Colour: There are always a lot of water bottles in the gym, afraid of taking the wrong one? With our gradient colour design, you can recognise your own among many water bottles at a glance. Notice: Actual colour may be slightly different from the image due to different monitor and light effects. 4 Colour Variants available</p><br>
+
+
+
+
+
+
+<center>
+  <script type="text/javascript">
+      function customQuantitiesPayFast (formReference) {
+      formReference['amount'].value = formReference['amount'].value * formReference['custom_quantity'].value;
+      return true;
+      }
+      </script>
+       <script type="text/javascript">
+      function actionPayFastJavascript ( formReference ) {
+      let shippingValidOrOff = typeof shippingValid !== 'undefined' ? shippingValid : true; 
+      let customValid = shippingValidOrOff ? customQuantitiesPayFast( formReference ) : false;
+       if (typeof shippingValid !== 'undefined' && !shippingValid) {
+      return false;
+      }
+      if (typeof customValid !== 'undefined' && !customValid) {
+      return false;
+      }
+      return true;
+       }
+      </script>
+      <form onsubmit="return actionPayFastJavascript( this );" name="PayFastPayNowForm" action="https://www.payfast.co.za/eng/process" method="post">
+      <input required type="hidden" name="cmd" value="_paynow">
+      <input required type="hidden" name="receiver" pattern="[0-9]" value="21812675">
+      <input required type="hidden" name="amount" value="160">
+      <table>
+      <tr>
+
+
+          <p class="quantitytext">Select Quantity</p>
+
+      <td><input required id="custom_quantity" type="number" name="custom_quantity" value="1" class="quantitybox"></td>
+      </tr>
+      </table>
+      
+      <input required type="hidden" name="item_name" maxlength="255" value="Lilic Purple 2L Bottle">
+      <table>
+      <tr>
+      <td colspan=2 align=center>
+
+
+        <p>Send Us Proof Of Payment So We Can Send Your Product Out As Soon As Possible <br><br>+27 61 714 9722</p><br>
+      <input type="image" src="https://my.payfast.io/images/buttons/BuyNow/Dark-Large-BuyNow.png" alt="Buy Now" title="Buy Now with Payfast">
+      </td>
+      </tr>
+      </table>
+  </form>
+</div>
+
+
+</center>
